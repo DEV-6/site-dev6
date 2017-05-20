@@ -15,7 +15,7 @@ body{
 .bg1{
 	background-image: url('../imgs/bg1.jpg');
 	background-attachment: fixed;
-	height:900px;
+	height:950px;
 	width:100%;
 	filter: grayscale(100%) brightness(30%);
 	position:absolute;
@@ -49,8 +49,8 @@ body{
 .equipe{
 	text-align: center;
 	background-attachment: fixed;
-	margin-top:900px;
-	height:900px;
+	margin-top:950px;
+	height:950px;
 }
 .caption>p{
 	color:#797979;
@@ -59,8 +59,8 @@ body{
 	transition: 0.3s ease-in-out;
 	filter: grayscale(100%);
 	border-radius: 100%;
-	width: 45%;
-	height: 45%;
+	width: 35%;
+	height: 35%;
 }
 .thumbnail>img:hover{
 	transition: 0.3s ease-in-out;
@@ -69,11 +69,15 @@ body{
 .thumbnail{
 	border: 0;
 }
+.equipeHr{
+	width:30%;
+	border:1px solid #5cb85c;
+}
 .social>img{
 	transition: 0.3s ease-in-out;
+	width: 25px;
+	height: 25px;
 	filter: grayscale(100%);
-	width: 30px;
-	height: 30px;
 }
 .social>img:hover{
 	transition: 0.3s ease-in-out;

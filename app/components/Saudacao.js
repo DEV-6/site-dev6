@@ -6,7 +6,7 @@ var Saudacao = React.createClass({
 	},
 	timeImage: function(){
 		if(document.getElementById('saudacao').src.substring(34,document.getElementById('saudacao').src.length) == "saudacao.gif"){
-			setTimeout(this.changeImage, 1980);
+			setTimeout(this.changeImage, 1955);
 			console.log('oi');
 		}
 		else{

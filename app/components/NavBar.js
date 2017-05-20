@@ -18,6 +18,8 @@ var NavBar = React.createClass({
       				<ul className="nav navbar-nav navbar-right">
         				<li className="active"><a href="#">Início</a></li>
         				<li><a href="#">Quem somos</a></li>
+        				<li><a href="#">A Equipe</a></li>
+        				<li><a href="#">Projetos</a></li>
         			</ul>
         		</div>
 			  </div>
