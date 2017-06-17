@@ -13,7 +13,8 @@
     "jquery": "^3.2.1",
     "react": "^15.4.2",
     "react-bootstrap": "^0.31.0",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-scroll": "^1.5.2"
   },
   "devDependencies": {
     "babel-core": "^6.24.0",

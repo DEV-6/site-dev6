@@ -1,6 +1,7 @@
 var React = require('react');
+var createReactClass = require('create-react-class');
 
-var NavBar = React.createClass({
+var NavBar = createReactClass({
 	render: function(){
 		return(
 			<nav className="navbar navbar-inverse navbar-fixed-top">
