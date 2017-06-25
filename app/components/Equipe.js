@@ -9,14 +9,10 @@ var Events     = Scroll.Events;
 var scroll     = Scroll.animateScroll;
 var scrollSpy  = Scroll.scrollSpy;
 
-$(document).ready(function(){
-		$("#wrap").load("getTeam.php");
-	});
-
 var Equipe = createReactClass({
 	componentDidMount: function() {
       scrollSpy.update();
- 
+ 	  $("#wrap").load("getTeam.php");
     },
     componentWillUnmount: function() {
       Events.scrollEvent.remove('begin');

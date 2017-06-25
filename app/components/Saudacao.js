@@ -1,7 +1,6 @@
 var React = require('react');
 var Scroll  = require('react-scroll');
 var createReactClass = require('create-react-class');
-var $ = require('jquery');
 
 var Link       = Scroll.Link;
 var Element    = Scroll.Element;
@@ -9,9 +8,6 @@ var Events     = Scroll.Events;
 var scroll     = Scroll.animateScroll;
 var scrollSpy  = Scroll.scrollSpy;
 
-$(document).ready(function(){
-	timeImage();
-});
 function timeImage() {
 	if(document.getElementById('saudacao').src.substring(34,document.getElementById('saudacao').src.length) == "saudacao.gif"){
 		setTimeout(function(){document.getElementById('saudacao').src= "./imgs/logo.png"}, 1900);
@@ -21,6 +17,7 @@ function timeImage() {
 var Saudacao = createReactClass({
 	  componentDidMount: function() {
       scrollSpy.update();
+      timeImage();
  
     },
     componentWillUnmount: function() {

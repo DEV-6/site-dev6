@@ -1,6 +1,5 @@
 var React = require('react');
 var createReactClass = require('create-react-class');
-var $ = require('jquery');
 var Scroll  = require('react-scroll');
 
 var Link       = Scroll.Link;
@@ -10,9 +9,6 @@ var scroll     = Scroll.animateScroll;
 var scrollSpy  = Scroll.scrollSpy;
 
 var slideIndex = 0;
-$(document).ready(function(){	
-		carousel();
-});
 function carousel() {
 	var i;
 	var x = document.getElementsByClassName("mySlides");
@@ -28,13 +24,14 @@ function carousel() {
 var Sobre = createReactClass({
 	componentDidMount: function() {
       scrollSpy.update();
+      carousel();
  
     },
     componentWillUnmount: function() {
       Events.scrollEvent.remove('begin');
       Events.scrollEvent.remove('end');
     },	
-  render: function() {
+  	render: function() {
 	  return(
 			<Element name="sobre" className="sobre">
 			<div className="sobreCont"></div>
