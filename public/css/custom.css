@@ -18,6 +18,7 @@ body{
 	height:950px;
 	width:100%;
 	filter: grayscale(100%) brightness(30%);
+	-webkit-filter: grayscale(100%) brightness(30%);
 	position:absolute;
 	z-index:1;
 	left:0;
@@ -25,15 +26,15 @@ body{
 	animation-duration: 2s;
 }
 .bgSobre{
-	height:100%;
+	height:950px;
 	width: 100%;
-	filter: grayscale(100%);
 	position:absolute;
 	z-index:1;
 	overflow:hidden;
 }
 .mySlides{
-	width:100%;
+	height: 100%;
+	margin-left: 30%;
 }
 .conteudo{
 	background-color: transparent;
@@ -53,7 +54,6 @@ body{
 .faixa{
 	margin:0;
 	background-image: url('../imgs/faixa.png');
-	height:950px;
 }
 #saudacao{
 	width: 40%;
@@ -87,6 +87,7 @@ body{
 .thumbnail>img{
 	transition: 0.3s ease-in-out;
 	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
 	border-radius: 100%;
 	width: 35%;
 	height: 35%;
@@ -94,6 +95,7 @@ body{
 .thumbnail>img:hover{
 	transition: 0.3s ease-in-out;
 	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);
 }
 .thumbnail{
 	border: 0;
@@ -109,11 +111,13 @@ body{
 	width: 25px;
 	height: 25px;
 	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
 	margin-right:5px;
 }
 .social>img:hover{
 	transition: 0.3s ease-in-out;
 	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);
 }
 @keyframes fadeIn {
     from {opacity: 0;}
@@ -140,22 +144,6 @@ fieldset{
 	margin-top:1%;
 	text-align:center;
 	color:white;
-}
-.btn-danger{
-	background-color:#99DA18;
-	color:white;
-	height:50px;
-	float:left;
-	margin-left:1%;
-	border-radius:6px;
-	margin-top:2%;
-	border:1px solid green;
-	
-}
-.btn-danger:hover{
-	background-color:#A5FE05;
-	color:white;
-	border:1px solid green;
 }
 .contato{
 	text-align: center;
@@ -205,15 +193,10 @@ fieldset{
 	min-height:100px;
 	padding:6% 0 0 0;
 }
-@media (max-width: 410px){
-	.equipe{
-		margin-top: 170px;
-	}
-}
 @media (max-width: 768px) {
 	.faixa{
 		background-attachment: fixed;
-		height:auto;
+		height:950px;
 	}
 	.sobreHr{
 		width:70%;
@@ -242,6 +225,9 @@ fieldset{
 	}
 }
 @media (min-width: 768px){
+	.faixa{
+		height:950px;
+	}
 	.contato{
 		margin-top: 0;
 	}
@@ -263,6 +249,14 @@ fieldset{
 .navbar-inverse .navbar-nav>li>a.active{
 	background-color: #080808;
 	color: white;
+}
+@media (max-width: 320px){
+	.equipe{
+		margin-top: 170px;
+	}
+	.faixa{
+		height:auto;
+	}
 }
 
 

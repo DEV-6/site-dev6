@@ -22,7 +22,7 @@ function carousel() {
 	slideIndex++;
 	if (slideIndex > x.length) {slideIndex = 1} 
 	 x[slideIndex-1].style.display = "block"; 
-	 setTimeout(carousel, 4000);
+	 setTimeout(carousel, 6000);
 }
 
 var Sobre = createReactClass({
@@ -40,21 +40,18 @@ var Sobre = createReactClass({
 			<div className="sobreCont"></div>
 			<div className="bgSobre">
 				<img className="mySlides w3-animate-fading" src="./imgs/sobre1.jpg"/>
-				<img className="mySlides w3-animate-fading" src="./imgs/sobre2.jpg"/>
 				<img className="mySlides w3-animate-fading" src="./imgs/sobre3.jpg"/>
-				<img className="mySlides w3-animate-fading" src="./imgs/sobre4.jpg"/>
 			</div>
 					<div className="jumbotron conteudo faixa">
 						<div>
 							<h1><strong>Quem Somos</strong></h1>
 							<hr className="sobreHr"/>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								<p/> Donec vulputate enim erat, sit amet venenatis lorem <p/> blandit non. Cras laoreet, dui ut fringilla luctus, nisi ante
-								<p/> pulvinar augue, eleifend imperdiet enim ante cursus turpis. <p/> Quisque nisl ipsum, tempus in arcu non, placerat imperdiet enim. 
-								<p/> Mauris commodo nisl quis felis convallis fringilla. Donec ut aliquam <p/> nibh. Quisque tristique mauris ex, a ornare libero maximus id. 
-								<p/> Ut venenatis urna sodales, fringilla ipsum id, auctor ante. Aenean id mauris <p/> commodo, varius justo ut, lobortis justo. Morbi auctor justo vel vehicula 
-								<p/> convallis. Ut id luctus nisl. Suspendisse pharetra a tellus et dictum. Proin <p/> imperdiet ut ex ut eleifend.
+								A Dev6 é um grupo formado por seis desenvolvedores com o 
+								<br/>objetivo de criar e aperfeiçoar soluções na área de tecnologia da 
+								<br/>informação, utilizando de forma eficiente o conhecimento individual de 
+								<br/>cada integrante e a paixão em conectar o mundo ainda mais através da 
+								<br/>informática.
 							</p>
 						</div>
 					</div>

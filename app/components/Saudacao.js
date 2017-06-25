@@ -1,12 +1,22 @@
 var React = require('react');
 var Scroll  = require('react-scroll');
 var createReactClass = require('create-react-class');
- 
+var $ = require('jquery');
+
 var Link       = Scroll.Link;
 var Element    = Scroll.Element;
 var Events     = Scroll.Events;
 var scroll     = Scroll.animateScroll;
 var scrollSpy  = Scroll.scrollSpy;
+
+$(document).ready(function(){
+	timeImage();
+});
+function timeImage() {
+	if(document.getElementById('saudacao').src.substring(34,document.getElementById('saudacao').src.length) == "saudacao.gif"){
+		setTimeout(function(){document.getElementById('saudacao').src= "./imgs/logo.png"}, 1900);
+	}
+}
 
 var Saudacao = createReactClass({
 	  componentDidMount: function() {
@@ -17,14 +27,6 @@ var Saudacao = createReactClass({
       Events.scrollEvent.remove('begin');
       Events.scrollEvent.remove('end');
     },
-	changeImage: function(){
-		document.getElementById('saudacao').src= "./imgs/logo.png";
-	},
-	timeImage: function(){
-		if(document.getElementById('saudacao').src.substring(34,document.getElementById('saudacao').src.length) == "saudacao.gif"){
-			setTimeout(this.changeImage, 1955);
-		}
-	},
 	render: function(){
 		return(
 			<div className="container">
@@ -32,7 +34,7 @@ var Saudacao = createReactClass({
 				<div className="jumbotron conteudo">
 				<div className="row">
 				<div className="col-xs-12">
-				  <img id="saudacao" onLoad={this.timeImage} src="./imgs/saudacao.gif"/>
+				  <img id="saudacao" src="./imgs/saudacao.gif"/>
 				</div>
 				</div>
 				<div className="row">
