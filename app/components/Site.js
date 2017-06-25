@@ -36,7 +36,7 @@ var Site = createReactClass({
 				      <Navbar.Toggle />
 				    </Navbar.Header>
 				    <Navbar.Collapse>
-				      <Nav pullRight>
+				      <ul className="nav navbar-nav navbar-right">
 				      	<li>
 					        <Link activeClass="active" to="inicio" spy={true} smooth={true} duration={500} onSetActive={this.handleSetActive}>
 					        	Início
@@ -57,7 +57,7 @@ var Site = createReactClass({
 				        		Contato
 				        	</Link>
 				        </li>
-				      </Nav>
+				      </ul>
 				    </Navbar.Collapse>
 				</Navbar>
 				<Container />
